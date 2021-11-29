@@ -3,14 +3,15 @@ from random import randint
 
 class KMeans():
 	def kmeans(
-			self, 
-			data:[[float]], 
-			boundaries:[(float,float)]=None, 
-			dist:str="manhattan", 
-			ver:str="lloyd", 
-			epochs:int=10, 
-			k:int=3, 
-			centroids:[[float]]=None) -> [int,[float]]: 
+		self, 
+		data:[[float]], 
+		boundaries:[(float,float)]=None, 
+		dist:str="manhattan", 
+		ver:str="lloyd", 
+		epochs:int=10, 
+		k:int=3, 
+		centroids:[[float]]=None) -> [int,[float]]: 
+
 		'''
 		Implements the kmeans clusterization algorithm on n-dimensional data
 		
