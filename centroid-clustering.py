@@ -110,17 +110,3 @@ class CentroidClustering():
 				warn("\n[WARNING] Distance metric '%s' doesn't exist. Will use Manhattan metric instead..." % ver)
 				centroid_distance = self.calc_distance(centroid, data)		#Might be possible to jump directly to case "manhattan"
 		return(centroid_distance)
-		
-		
-		
-#data = [[randint(0,10),randint(0,10)] for x in range(80)]
-data = [(2,10),(2,8),(2,5),(1,2),(2,3),(4,8),(7,4),(6,2),(8,4),(8,2)]
-start = [(2,10),(1,2),(8,4)]
-cm = CentroidClustering()
-label, centroid = cm.c_clustering(data, ver="PAM", epochs=250)
-import matplotlib.pyplot as plt
-x,y = zip(*data)
-plt.scatter(x,y, c=label)
-x,y = zip(*centroid)
-plt.scatter(x,y, c="red", s=200)
-plt.show()
