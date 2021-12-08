@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About the project
 
 This project implements several unsupervised clustering algorithms based on centroids from scratch with parameters to tweak them to your liking and some other options to play with. 
 
