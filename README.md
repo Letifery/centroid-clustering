@@ -1,7 +1,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project implements several unsupervised clustering algorithms based on centroids with parameters to tweak them to your liking and some other options to play with. 
+This project implements several unsupervised clustering algorithms based on centroids from scratch with parameters to tweak them to your liking and some other options to play with. 
+
+Currently implemented are:
+- `Partition around medoids (PAM) Clustering`
+- `Naive k-mean clustering (Lloyd's algorithm)`
+- `MacQueens k-mean clustering`
 
 ## Prerequisites
 
