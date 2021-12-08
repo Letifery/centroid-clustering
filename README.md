@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project implements several variations (currently Llyods and MacQueen) of the unsupervised clustering algorithm `K-means` with parameters to tweak them to your liking and some other options to play with them. 
+This project implements several unsupervised clustering algorithms based on centroids with parameters to tweak them to your liking and some other options to play with. 
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ This project implements several variations (currently Llyods and MacQueen) of th
 
 ## Installation
 
-Just clone the repository, extract the python file and you are ready to go! Make sure to read the description of the function `kmeans` to fully understand on how to use it (or see `Parameters` below)
+Just clone the repository, extract the python file and you are ready to go! Make sure to read the description of the function `c_clustering` to fully understand on how to use it (or see `Parameters` below)
 
 ## Parameters & Return values
 
@@ -18,8 +18,8 @@ Just clone the repository, extract the python file and you are ready to go! Make
 - `data`: Your Input - Has to be a list of numeric vectors of equal shape
 - `boundaries`: Specifies	the space for centroid generation. It will be calculated automatically if it isn't specified but could be useful for testing purposes. Has to be a set of n tuples [(min,max),...], where n = dimension of your used datapoints.
 - `dist`: Used distance metric. Currently available are: "manhattan"
-- `ver`: Specifies the used kmeans variant. Currently available are: "llyod", "queen"
-- `epochs`: How often kmeans should run over the dataset 
+- `ver`: Specifies the clustering variant. Currently available are: "llyod", "queen", "PAM"
+- `epochs`: How often the specified algorithm should run over the dataset 
 - `k`: Number of centroids
 - `centroids`: Start position of centroids (They will be randomly generated inside the boundary space if not specified). The shape must be equal to your datapoint vector
 
